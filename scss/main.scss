@@ -4,7 +4,7 @@
   font-family: "outfit";
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
 @font-face {
   font-family: "outFit";
   src: url(/Font-Face/OutFit/Outfit-VariableFont_wght.ttf);
@@ -15,12 +15,12 @@
   display: grid;
   justify-content: center;
   align-items: center;
- h1{
-  text-align: center;
-  padding: 0 0.5em;
-  margin-top: -45em;
- }
-  span{
+  h1 {
+    text-align: center;
+    padding: 0 0.5em;
+    margin-top: -45em;
+  }
+  span {
     color: white;
   }
 }
@@ -29,11 +29,10 @@ body {
 }
 .section {
   height: 100vh;
-  background-color: #4c4b63;
   display: grid;
   place-content: center;
   margin: 0 0.5em;
-  grid-template-columns: 100%;
+  grid-template-columns: 350px;
   grid-template-rows: 1fr;
   grid-column-gap: 2px;
   grid-row-gap: 2px;
@@ -42,31 +41,33 @@ body {
   .main-div {
     padding: 1em;
     margin-bottom: 0.5em;
-
-    background-color: #edf7f6;
+    color: #777;
+    background-color: black;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     .image-section {
+      height: 172px;
       img {
         width: 100%;
+        object-fit: contain;
       }
     }
     .main-section__title {
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 400;
-      opacity: 0.8;
+
       text-transform: capitalize;
       margin: 0.4em 0;
     }
     .main-section__info {
-      font-size: 1.2em;
-      font-weight: 300;
-      opacity: 0.8;
+      font-size: 1.1em;
+      font-weight: 400;
       margin-bottom: 0.3em;
     }
     .btn {
-      background-color: #edf7f6;
-      color: black;
+      background-color: black;
+      color: whitesmoke;
       border: none;
       text-align: start;
       border-bottom: 4px solid saddlebrown;
@@ -75,7 +76,9 @@ body {
       font-size: 1rem;
       height: 30px;
       width: 200px;
-
+      margin-top: 1.5em;
+      font-weight: 450;
+      letter-spacing: 2.5px;
       &:hover,
       &:focus {
         transition: 300ms all linear;
@@ -93,7 +96,7 @@ body {
   }
   #main-section {
     height: 100vh;
-    h1{
+    h1 {
       margin: 0;
     }
   }
@@ -108,7 +111,7 @@ body {
     align-items: stretch;
     .main-div {
       padding: 0.9em;
-      box-shadow: 3px 2px 15px white;
+      box-shadow: 3px 2px 15px black;
       margin: 0.5em;
     }
   }
