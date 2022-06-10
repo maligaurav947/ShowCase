@@ -27,7 +27,8 @@ body {
   background-color: #4c4b63;
   display: grid;
   place-content: center;
-  grid-template-columns: 300px;
+  margin: 0 0.5em;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr;
   grid-column-gap: 2px;
   grid-row-gap: 2px;
