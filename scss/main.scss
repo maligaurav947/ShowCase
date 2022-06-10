@@ -1,11 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "outfit";
   box-sizing: border-box;
 }
 #main-section {
-  height: 200vh;
-  background-color: black;
+  height: 180vh;
+  color: #edf7f6;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ h1{
+  text-align: center;
+  padding: 0 0.5em;
+  margin-top: -35em;
+ }
+  span{
+    color: white;
+  }
 }
 body {
   background-color: #4c4b63;
@@ -72,6 +84,12 @@ body {
 @media screen and (min-width: 756px) {
   body {
     background-color: #4c4b63;
+  }
+  #main-section {
+    height: 100vh;
+    h1{
+      margin: 0;
+    }
   }
   .section {
     display: grid;
