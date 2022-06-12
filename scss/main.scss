@@ -91,7 +91,9 @@ body {
     }
   }
 }
-
+::-webkit-scrollbar{
+  width: 0;
+}
 @media screen and (min-width: 756px) {
   body {
     background-color: #4c4b63;
