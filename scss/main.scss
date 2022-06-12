@@ -19,9 +19,8 @@
     text-align: center;
     padding: 0 0.5em;
     margin-top: -45em;
-    
   }
-  .auto-type{
+  .auto-type {
     color: chartreuse;
   }
 }
@@ -91,7 +90,7 @@ body {
     }
   }
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
 }
 @media screen and (min-width: 756px) {
@@ -117,15 +116,14 @@ body {
     align-items: stretch;
     .main-div {
       padding: 0.9em;
-      
+
       box-shadow: 3px 2px 15px black;
       margin: 0.5em;
-    .main-section__title{
-      font-weight: 400;
-      color: white;
-      margin: 0.4em 0;
-    }
+      .main-section__title {
+        font-weight: 400;
+        color: white;
+        margin: 0.4em 0;
+      }
     }
   }
-
 }
