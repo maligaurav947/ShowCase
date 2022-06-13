@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  font-family: "Fredoka";
+}
+.MyVideo {
+  position: fixed;
+  left: 600px;
+  top: 150px;
+  min-width: 100%;
+  min-height: 100%;
+}
+.MyVideo:hover {
+  left: 500px;
+  top: 100px;
+}
+a,
+p,
+h1 {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  background: none;
+}
+header {
+  height: 9vh;
+  background: rgba(30, 47, 35);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.nav-links {
+  display: flex;
+  padding: 15px;
+}
+.nav-links li {
+  padding: 10px;
+}
+.nav-links li a:hover,
+.logo a:hover {
+  color: rgb(16, 255, 88);
+}
+.main {
+  height: 90vh;
+}
+.h1-text {
+  font-size: 40px;
+  display: grid;
+  position: absolute;
+  top: 120px;
+  left: 15px;
+  right: 15px;
+  color: rgba(26, 147, 111);
+  text-align: center;
+}
+.p-text {
+  text-align: left;
+  position: absolute;
+  top: 220px;
+  left: 30px;
+  right: 25px;
+  color: rgb(218, 215, 205);
+  font-weight: 600;
+}
+.btn {
+  position: absolute;
+  top: 360px;
+  left: 55px;
+  color: rgba(54, 21, 30);
+  background-color: rgb(16, 255, 88);
+}
+.btn a {
+  color: rgba(54, 21, 30);
+}
+.p-text-mobile {
+  display: none;
+}
+.btn:hover {
+  background: rgba(26, 147, 111);
+}
+@media screen and (max-width: 480px) {
+  .h1-text {
+    top: 80px;
+    font-size: 19px;
+  }
+  .p-text {
+    display: none;
+  }
+  .btn {
+    top: 550px;
+  }
+  .p-text-mobile {
+    font-size: 15px;
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    right: 25px;
+    color: rgb(218, 215, 205);
+    font-weight: 600;
+    color: rgb(16, 255, 88);
+    word-wrap: break-word;
+  }
+  .logo a {
+    font-size: 18px;
+  }
+  .nav-links li a {
+    font-size: 12px;
+    color: white;
+  }
+  .MyVideo {
+    position: fixed;
+    left: 6px;
+    top: 150px;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .MyVideo:hover {
+    position: absolute;
+  }
+}
