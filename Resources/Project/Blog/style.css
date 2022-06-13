@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #eee;
+}
+section {
+  height: 420vh;
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  display: flex;
+  padding: 0 0.9em;
+  justify-content: center;
+}
+.section-div {
+  margin: 0.8em 1.5em;
+  background-color: aquamarine;
+}
+main {
+  display: flex;
+  place-content: center;
+}
+.main-section {
+  position: relative;
+  top: 325px;
+}
+
+.div1 {
+  background: #9ec5ab;
+}
+.div2 {
+  background: #272932;
+}
+.div3 {
+  background: #1f1300;
+}
+.div4 {
+  background: #d8cc34;
+}
+.div5 {
+  background: #104f55;
+}
+.div6 {
+  background: #d8a47f;
+}
+.div7 {
+  background: #f7b05b;
+}
+.div8 {
+  background: #423e3b;
+}
+.div9 {
+  background: #cc5803;
+}
+.div10 {
+  background: #0f7173;
+}
+.div11 {
+  background: #01200f;
+}
+.div11 .info p,
+.div8 .info p,
+.div3 .info p,
+.div5 .info p,
+.div2 .info p,
+.div10 .info p {
+  color: white;
+}
+.info {
+  padding: 0 0.8em;
+  line-height: 1.9em;
+}
+.info p {
+  color: black;
+  padding: 3.5em 0.8em;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.btn {
+  background-color: brown;
+  color: white;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 2.5em;
+}
+footer {
+  background: #b497d6;
+  height: 20vh;
+  margin: 45em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3.5rem;
+  line-height: 84px;
+  letter-spacing: 0.285em;
+  color: #000000;
+}
+li {
+  list-style-type: none;
+  padding: 0 0.9em;
+}
+a {
+  text-decoration: none;
+}
+ul li a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 42px;
+  /* identical to box heght */
+  letter-spacing: 0.285em;
+  color: #000000;
+}
+ul {
+  padding-top: 1.5em;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+@media screen and (min-width: 756px) {
+  section {
+    background-color: #eee;
+    height: 350vh;
+    font-family: "Roboto", sans-serif;
+  }
+  .title {
+    font-family: "Shadows Into Light", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .section-div {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+  }
+  main {
+    display: flex;
+    place-content: center;
+  }
+  .main-section {
+    position: relative;
+    top: 325px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    row-gap: 30px;
+    column-gap: 80px;
+  }
+
+  .div1 {
+    background: #9ec5ab;
+    grid-row: 1 / span 2;
+  }
+  .div1 .info p,
+  .div4 .info p {
+    color: black;
+  }
+  .div2 {
+    background: #272932;
+  }
+  .div3 {
+    background: #1f1300;
+  }
+  .div4 {
+    background: #d8cc34;
+    grid-row: 2 / span 2;
+  }
+  .div5 {
+    background: #104f55;
+  }
+  .div6 {
+    background: #d8a47f;
+    grid-column: 1 / span 3;
+  }
+  .div7 {
+    background: #f7b05b;
+    grid-row: 1 / span 2;
+  }
+  .div8 {
+    background: #423e3b;
+    grid-column: 1 / span 2;
+  }
+  .div9 {
+    background: #cc5803;
+  }
+  .div10 {
+    background: #0f7173;
+  }
+  .div11 {
+    background: #01200f;
+    grid-column: 2 / span 2;
+  }
+  .info {
+    padding: 0 0.8em;
+    line-height: 1.9em;
+  }
+  .info p {
+    color: white;
+    padding: 3.5em 0.8em;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  .btn {
+    background-color: brown;
+    color: white;
+    margin-left: 1.5em;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em 2.5em;
+  }
+  footer {
+    background: #b497d6;
+    height: 20vh;
+    margin: 45em 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4.5rem;
+    line-height: 84px;
+    letter-spacing: 0.285em;
+    color: #000000;
+  }
+  li {
+    list-style-type: none;
+    padding: 0 0.9em;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul li a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 42px;
+    /* identical to box heght */
+    letter-spacing: 0.285em;
+    color: #000000;
+  }
+  ul {
+    display: flex;
+  }
+}

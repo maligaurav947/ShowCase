@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f9c784;
+}
+main {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  color: aqua;
+}

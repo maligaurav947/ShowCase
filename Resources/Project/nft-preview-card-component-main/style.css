@@ -1,0 +1,121 @@
+/* Unverisal Rule */
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Root Declartion */
+:root
+
+/* HTML Level Rule */
+
+html {
+  font-size: 90.45%;
+}
+
+/* Main Section Rules */
+
+#main {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: grid;
+  place-content: center;
+}
+
+/* Card Rules */
+
+.card {
+  height: 32em;
+  width: 20em;
+  border-radius: 20px;
+  text-align: center;
+  background-color: hsl(216, 50%, 16%);
+  line-height: 1.25;
+}
+.card-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: left;
+  padding-left: 1.35em;
+}
+.card-prices-eth,
+.card-prices-eth i {
+  color: hsl(178, 100%, 50%);
+}
+.card-price-days,
+.card-price-days i {
+  color: hsl(215, 51%, 70%);
+}
+.card-info {
+  padding-top: 0.9em;
+  text-align: left;
+  padding-left: 2.25em;
+}
+.card-prices {
+  padding-top: 0.9em;
+  display: flex;
+  justify-content: space-around;
+}
+.img-eth {
+  border-color: hsl(216, 50%, 16%);
+  border-radius: 5px;
+  padding: 1em 0;
+  height: 15em;
+}
+
+/* Ower Info Rules */
+
+.ower-info {
+  font-weight: 300;
+  padding-top: 0.8em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.ower-info img {
+  height: 2.5em;
+  padding: 0.5em;
+}
+
+/* Spam Element */
+
+span {
+  color: rgb(143, 140, 140);
+  padding-right: 0.6em;
+}
+
+/* Hr Element */
+
+hr {
+  background-color: hsl(215, 32%, 27%);
+  margin: 0.9em 2em -0.5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card-prices :is(i) {
+  padding-right: 0.4em;
+}
+
+/* Design For Mobile 375px */
+@media screen and (max-width: 375px) {
+  #main {
+    /* display: ; */
+  }
+  .col {
+    display: grid;
+  }
+  .card {
+    height: 30em;
+    width: 10em;
+  }
+}

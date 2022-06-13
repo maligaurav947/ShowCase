@@ -1,0 +1,9 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 255, 0.9), rgba(255, 255, 0, 0.9));
+}
+.main {
+  background-image: url(https://cdn.pixabay.com/photo/2022/03/04/09/41/ukraine-7046944_960_720.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
