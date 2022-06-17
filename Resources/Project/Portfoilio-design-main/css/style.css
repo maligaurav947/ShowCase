@@ -1,0 +1,140 @@
+:root {
+  --background-color: #030710;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffff;
+  font-family: "Outfit", sans-serif;
+}
+main {
+  height: 170vh;
+  color: #ffff;
+  background-color: var(--background-color);
+}
+img {
+  width: 300px;
+  align-items: center;
+  padding: 0.5em 1.9em 0.8em;
+}
+.img {
+  background-size: cover;
+  background-position: center;
+  padding: 12vh;
+  background-image: url(/Resources/Project/Portfoilio-design-main/6g0o8b.jpg);
+}
+h2,
+p {
+  padding: 0 1.9em;
+  line-height: 0.5em;
+}
+.fa-brands,
+.fa-solid {
+  margin: 0 0.5em 0 -0.7em;
+}
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+h1 {
+  top: -35px;
+  position: relative;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.24em;
+}
+.sub-title {
+  padding: 0 0 0.5em;
+}
+.project,
+.links,
+.about {
+  padding: 2.5em 0em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project .title {
+  padding: 0.8em 0;
+}
+.project button {
+  margin: 0.3em 0;
+  width: 250px;
+  padding: 1em 0;
+  left: calc(50% - 391px / 2 - 0.5px);
+  top: calc(50% - 69px / 2 + 31px);
+  background: #49536d;
+  box-shadow: 2px 3px 10px 1px rgba(229, 229, 229, 0.35),
+    inset 84px 57px 125px 21px #030710;
+  border-radius: 21px;
+}
+.title {
+  letter-spacing: 0.24em;
+}
+
+.links button {
+  margin: 0.3em 0;
+  width: 250px;
+  padding: 1em 0;
+  background: #49536d;
+  box-shadow: 2px 3px 10px 1px rgba(229, 229, 229, 0.35),
+    inset 84px 57px 125px 21px #030710;
+  border-radius: 19px;
+}
+.links .title {
+  padding: 0.8em 0;
+}
+a {
+  text-decoration: none;
+}
+.link a {
+  font-size: 0.7rem;
+}
+.link i {
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 756px) {
+  .flex {
+    padding-top: 2.5em;
+    display: flex;
+  }
+  main {
+    height: 140vh;
+    background-color: var(--background-color);
+  }
+  .img {
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30vh;
+  }
+  h1 {
+    left: 19.5vw;
+    top: 45vh;
+    justify-self: center;
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 181px;
+    text-align: center;
+    letter-spacing: 0.24em;
+  }
+  .about {
+    padding: 0 7.5em;
+  }
+}
