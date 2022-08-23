@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  main {
+   display: grid;
+   place-content: center;
+   height: 100vh;
+  }
+
+  h2 {
+   font-family: "Courier New", Courier, monospace;
+   text-align: center;
+   font-size: 2.25rem;
+  }
+
+  #counterresult {
+   display: grid;
+   font-size: 2.5rem;
+   place-content: center;
+   width: 100%;
+   height: 100px;
+   background-color: snow;
+  }
+
+  body {
+   background-color: aliceblue;
+  }
+
+  .btngroup {
+   margin-top: 1.5em;
+   display: flex;
+  }
+
+  button {
+   font-family: "Courier New", Courier, monospace;
+   margin: 0 0.5em;
+   border: none;
+   width: 250px;
+   text-align: center;
+   height: 45px;
+   font-size: 1.5rem;
+   cursor: pointer;
+   text-transform: capitalize;
+  }
+
+  /*
+button:hover,
+button:focus {
+  transition: all 500ms linear;
+  font-weight: 600;
+  background-color: whitesmoke;
+}
+*/
+ </style>
+</head>
+
+<body>
+ <main>
+  <h2>Counter</h2>
+  <div id="counterresult">0</div>
+  <div class="btngroup">
+   <button class="class" id="increase">increase</button>
+   <button class="class" id="reset">reset</button>
+   <button class="class" id="decrease">decrease</button>
+  </div>
+ </main>
+ <script>
+  const counterResult = document.getElementById("counterresult");
+  const inBtn = document.getElementById("increase");
+  const resetBtn = document.getElementById("reset");
+  const decBtn = document.getElementById("decrease");
+
+  let n = 0;
+
+  inBtn.addEventListener("click", () => {
+   counterResult.innerText = n++;
+  });
+
+  decBtn.addEventListener("click", () => {
+   counterResult.innerText = n-- - 1;
+   if (n < 0) {
+    counterResult.innerText = n = 0;
+   }
+  });
+
+  resetBtn.addEventListener("click", () => {
+   counterResult.innerText = n = 0;
+  });
+ </script>
+</body>
+
+</html>
