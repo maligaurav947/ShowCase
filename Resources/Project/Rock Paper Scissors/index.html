@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rock Paper Scissors</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+ <main>
+  <div class="section-left">
+   <h2>Your Choise: <br> <Span id="resultContainerUser"></Span></h2>
+   <div class="btn-group">
+    <button class="btn" id="rock-btn" value="Rock">Rock</button>
+    <button class="btn" id="paper-btn" value="Paper">Paper</button>
+    <button class="btn" id="scissors-btn" value="Scissors">Scissors</button>
+   </div>
+  </div>
+  <div class="score"><span id="scoreuser">0</span>:<span id="scorecomputer">0</span></div>
+  <div class="section-right">
+   <h2>Computer Choise:<br><Span id="resultContainerComputer"></Span></h2>
+   <button class="btn-reset" id="reset">Reset</button>
+   <h3 id="winnerornot" class="win"></h3>
+  </div>
+ </main>
+
+ <script src="main.js"></script>
+</body>
+
+</html>
