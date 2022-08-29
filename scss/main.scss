@@ -10,22 +10,26 @@
   src: url(/Font-Face/OutFit/Outfit-VariableFont_wght.ttf);
 }
 body {
-  background-color: #4c4b63;
+  background-color: #9EEFE5;
 }
 
 #main-section {
   height: 200vh;
-  color: #edf7f6;
+  color: #000000;
   display: grid;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 50vh;
   h1 {
     text-align: center;
     padding: 0 0.5em;
     margin-top: -45em;
   }
   .auto-type {
-    color: chartreuse;
+    color: white;
+    padding: 0 0.5em;
+    background-color: chartreuse;
   }
 }
 
@@ -36,31 +40,40 @@ body {
   margin: 0 0.5em;
   grid-template-columns: 350px;
   grid-template-rows: 1fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   justify-items: stretch;
   align-items: stretch;
+
   .main-div {
+    margin: 1vh 0;
+    height: 450px;
     padding: 1em;
-    margin-bottom: 0.5em;
+   
     color: #777;
-    background-color: #e2e8f0;
+    background-color: #3A1772;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    &:hover {
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
     .image-section {
       height: 172px;
       img {
         width: 100%;
+        height: 100%;
         object-fit: contain;
       }
     }
     .main-section__title {
       font-size: 1.5em;
       font-weight: 400;
-
       text-transform: capitalize;
       margin: 0.8em 0 0.6em;
+      color: white;
     }
     .main-section__info {
       font-size: 1.1em;
@@ -68,26 +81,22 @@ body {
       margin-bottom: 0.3em;
     }
     .btn {
-      background-color: black;
-      color: whitesmoke;
+      text-align: left;
       border: none;
-      text-align: start;
-      border-bottom: 4px solid saddlebrown;
       outline: none;
-      font-weight: 300;
+      width: 100px;
+      padding: 0 0.5em;
+      cursor: pointer;
       font-size: 1rem;
       height: 30px;
-      width: 200px;
-      margin-top: 1.5em;
-      font-weight: 450;
+     background-color: aliceblue;
+      font-weight: 600;
       letter-spacing: 2.5px;
-      &:hover,
-      &:focus {
-        transition: 300ms all linear;
-        color: white;
-
-        padding-left: 0.5em;
-        background-color: crimson;
+      position: absolute;
+      bottom: 15%;
+      left: 5%;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       }
     }
   }
@@ -97,7 +106,7 @@ body {
 }
 @media screen and (min-width: 756px) {
   body {
-    background-color: #4c4b63;
+    background-color: #9EEFE5;
   }
   #main-section {
     height: 100vh;
@@ -112,15 +121,15 @@ body {
     place-content: center;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 450px 450px;
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
+    grid-column-gap: 15x;
+    grid-row-gap: 15px;
     justify-items: stretch;
     align-items: stretch;
     .main-div {
       padding: 0.9em;
 
       box-shadow: 3px 2px 15px black;
-      margin: 0.5em;
+     margin:  1em 0;
       .main-section__title {
         font-weight: 400;
         color: white;
