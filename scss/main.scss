@@ -9,6 +9,10 @@
   font-family: "outFit";
   src: url(/Font-Face/OutFit/Outfit-VariableFont_wght.ttf);
 }
+body {
+  background-color: #4c4b63;
+}
+
 #main-section {
   height: 200vh;
   color: #edf7f6;
@@ -24,9 +28,7 @@
     color: chartreuse;
   }
 }
-body {
-  background-color: #4c4b63;
-}
+
 .section {
   height: 100vh;
   display: grid;
@@ -42,7 +44,7 @@ body {
     padding: 1em;
     margin-bottom: 0.5em;
     color: #777;
-    background-color: black;
+    background-color: #e2e8f0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
